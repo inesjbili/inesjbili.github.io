@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+    </main>
+
+  </head>
+
+    <body>
+      <main>
+      </main>
+
+  <div class="boxinfo">
+
+    <div class="title">
+      GENGAR #094
+    </div>
+
+
+    <div class="boxentry">
+      <div class="boxes">
+        ゲンガ
+      </div>
+      <div class="boxes">
+        1.5m
+      </div>
+      <div class="boxweight">
+        40.5 kg
+      </div>
+    </div>
+
+
+
+    <div class="boxentry">
+      <div class="boxes">
+        Purple
+      </div>
+      <div class="boxes">
+        Ghost + Poison
+      </div>
+    </div>
+
+
+
+    <div class="boxentry">
+      <div class="boxegg">
+        Amorphous egg group
+      </div>
+    </div>
+
+
+
+    <div class="boxentry">
+      <div class="boxes">
+        Cursed body
+      </div>
+      <div class="pokeball">
+        <a href="../index.html"> <img src="image/pokeball.png" alt="Pokeball">
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+    <script src="sketch.js"></script>
+
+    <script type="text/javascript">
+       var  eye = document.getElementsByClassName("eye-ball");
+       document.onmousemove = function(){
+       var width = window.innerWidth;
+       var x = event.clientX;
+       var a = x / width;
+       a= a *100;
+       var height = window.innerHeight;
+       var y = event.clientY;
+       var b = y / height;
+       b= b *100;
+       eye[0].style.cssText = "left: " + a + "%; top: " + b + "%;" + "transform:translate(-"+a+"%,-"+b+"%)";
+       eye[1].style.cssText = "left: " + a + "%; top: " + b + "%;" + "transform:translate(-"+a+"%,-"+b+"%)";
+       }
+    </script>
+
+
+
+  </body>
+</html>

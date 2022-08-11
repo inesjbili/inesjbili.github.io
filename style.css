@@ -1,0 +1,141 @@
+@font-face {
+ font-family: "Paragon";
+ src: url("webfont/paragon-regular.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Uncut oblique";
+ src: url("webfont/Uncut-Sans-RegularOblique.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Uncut medium";
+ src: url("webfont/Uncut-Sans-Medium.woff") format("woff");
+}
+
+
+html, body {
+   height: 100%;
+}
+
+body {
+  background-color: #eaeaea;
+  margin: 0;
+  display: flex;
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+
+canvas {
+  border: 5px solid;
+  border-color: black;
+  display: block;
+  box-shadow:10px 10px 0px #000000
+
+}
+
+.boxinfo {
+  background-color : #eaeaea;
+  border: 5px solid;
+  border-color: black;
+  border-left: none;
+  width: 630px;
+  height: 630px;
+  box-shadow:10px 10px 0px #000000
+
+}
+
+.upperhalf {
+  display: block;
+  height: 315px;
+}
+
+
+.bouton {
+  display: inline-block;
+  text-align: center;
+  border-radius: 100%;
+  border-width: 5px;
+  font-size: 220px;
+  height: 150px;
+  width: 170px;
+  margin-left: 75px;
+  margin-top: 10px;
+  -webkit-text-stroke: 3px #eaeaea;
+}
+
+
+.title {
+display : block;
+font-family: "Paragon";
+font-size: 90px;
+padding-top: 50px;
+padding-left: 50px;
+}
+
+.corps {
+  display: block;
+  font-family: "Uncut oblique";
+  font-size: 22px;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 487px;
+  margin-left: 50px;
+  margin-top: 10px;
+
+}
+
+.lowerhalf {
+  display: block;
+  height: 315px;
+}
+
+.pokedex {
+  display: flex;
+  margin-left: 290px;
+}
+
+.pokedex img {
+  height : 250px;
+}
+
+.right-eye-white{
+  border: 5px solid;
+  border-color: black;
+  width: 50px;
+  height: 50px;
+  margin-left: 450px;
+  margin-bottom: -50px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  background: #eaeaea;
+}
+
+.left-eye-white{
+  border: 5px solid;
+  border-color: black;
+  width: 50px;
+  height: 50px;
+  margin-left: 390px;
+  margin-bottom: -50px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  background: #eaeaea;
+}
+.eye-ball{
+  width: 17.5px;
+  height: 17.5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%,-20%);
+  background:black;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Somewhat a pokédex </title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+
+</head>
+
+  <body>
+    <main>
+    </main>
+
+
+
+<div class="boxinfo">
+
+<div class="upperhalf">
+
+<div class="title">
+POKÉDEX
+</div>
+
+
+<div class="corps">
+  Sort of. With only one pokémon. But which one ?
+  Connect the dots with the lil pen i gave you.
+  Press S once you're done. Check his entry &#8600;
+</div>
+
+
+<div class="bouton">
+  &#8627;
+</div>
+
+
+</div>
+
+<div class="lowerhalf">
+       <div>
+        <div class="left-eye-white">
+         <div class="eye-ball"></div>
+          </div>
+          <div class="right-eye-white">
+           <div class="eye-ball"></div>
+            </div>
+           </div>
+
+           <div class="pokedex">
+            <a href="ficheinfo/index.html"> <img src="image/pokedex.png" alt="Pokedex"> </a>
+          </div>
+ </div>
+  </div>
+
+
+ <script src="sketch.js"></script>
+
+ <script type="text/javascript">
+    var  eye = document.getElementsByClassName("eye-ball");
+    document.onmousemove = function(){
+    var width = window.innerWidth;
+    var x = event.clientX;
+    var a = x / width;
+    a= a *100;
+    var height = window.innerHeight;
+    var y = event.clientY;
+    var b = y / height;
+    b= b *100;
+    eye[0].style.cssText = "left: " + a + "%; top: " + b + "%;" + "transform:translate(-"+a+"%,-"+b+"%)";
+    eye[1].style.cssText = "left: " + a + "%; top: " + b + "%;" + "transform:translate(-"+a+"%,-"+b+"%)";
+    }
+ </script>
+
+
+  </body>
+
+</html>
